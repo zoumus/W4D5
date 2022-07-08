@@ -13,7 +13,7 @@ def my_min1(arr)
     min
 end
 
-def largest_contiguous_subsum1(list)
+def largest_contiguous_subsum1(list)#o(n^3)
     subs = []
     (0...list.length).each do |i|
         (i...list.length).each do |j|
@@ -44,6 +44,7 @@ end
 
 
 
-    list = [-5,-50,-50,-2,-7,6]
-  p  largest_contiguous_subsum1(list) # => 8
-  p  largest_contiguous_subsum2(list) # => 8
+    list = [5,3,-7]
+    list = [2,3,-6,7,-6,7]
+  p  largest_contiguous_subsum1(list) # => 17
+  p  largest_contiguous_subsum2(list) # => 17
